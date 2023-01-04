@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>彭硕的博客</title>
+    <link>https://pengzhang.github.io/</link>
+    <description>Recent content on 彭硕的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Jan 2023 21:47:45 +0800</lastBuildDate><atom:link href="https://pengzhang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>结构体</title>
+      <link>https://pengzhang.github.io/post/blog/</link>
+      <pubDate>Tue, 03 Jan 2023 21:47:45 +0800</pubDate>
+      
+      <guid>https://pengzhang.github.io/post/blog/</guid>
+      <description>一、结构体 1.1 什么是结构体 Go 语言中数组可以存储同一类型的数据，但在结构体中我们可以为不同项定义不同的数据类型。 结构体是由一系列具有相同类型或不同类型的数据构成的数据集合。
+1.2 结构体的定义和初始化 type struct_variable_type struct { member definition; member definition; ... member definition; } 一旦定义了结构体类型，它就能用于变量的声明
+variable_name := structure_variable_type {value1, value2...valuen} 初始化结构体
+// 1.按照顺序提供初始化值 P := person{&amp;#34;Tom&amp;#34;, 25} // 2.通过field:value的方式初始化，这样可以任意顺序 P := person{age:24, name:&amp;#34;Tom&amp;#34;} // 3.new方式,未设置初始值的，会赋予类型的默认初始值 p := new(person) p.age=24 1.3 结构体的访问 访问结构体成员(访问结构的各个字段)
+通过点.操作符用于访问结构的各个字段。
+package main import &amp;#34;fmt&amp;#34; type Books struct { title string author string subject string book_id int } func main() { var Book1 Books /* 声明 Book1 为 Books 类型 */ var Book2 Books /* 声明 Book2 为 Books 类型 */ /* book 1 描述 */ Book1.</description>
+    </item>
+    
+  </channel>
+</rss>
